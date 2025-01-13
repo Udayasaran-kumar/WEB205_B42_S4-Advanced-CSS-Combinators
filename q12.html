@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Elements with Descendant and Child Combinators</title>
+    <style>
+        div{
+            background-color: blue;
+            color: white;
+        }
+        #special{
+            background-color: black;
+            color: antiquewhite;
+        }
+        .highlight{
+            background-color: brown;
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+ <div class="highlight" id="special">
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptas consectetur expedita minus velit saepe, est corrupti, odio soluta omnis temporibus consequuntur sequi optio nemo quasi unde perspiciatis amet eius?
+    </p>
+ </div>
+</body>
+</html>
+<!-- Here in this html file using css the styling of id selector is applied on text is because of the hierarchy of priority goes like SICTU S-Inline styling,I-Id selector,C-Class selector,T-Tag selector,U-Universal selector-->
