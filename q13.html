@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Elements with Descendant and Child Combinators</title>
+    <style>
+        ol:first-child{
+            font-weight: bold;
+            
+        }
+        ol:first-child~li{
+            background-color: blue;
+        }
+        ol:nth-child(third)+li+li{
+            font-style: italic;
+        }
+        ol:hover{
+            color:red;
+        }
+        
+    </style>
+</head>
+<body>
+ <ol>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+    <li>five</li>
+ </ol>
+</body>
+</html>
