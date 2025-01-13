@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Styling</title>
+  <style>
+    button {
+  font-size: 16px;
+  color: black;
+}
+
+button[data-type="primary"] {
+  background-color: blue;
+}
+
+button.cta {
+  font-weight: bold;
+  background-color: green;
+}
+
+button[data-type="primary"].cta {
+  background-color: red;
+}
+  </style>
+</head>
+<body>
+  <button class="cta" data-type="primary">Primary CTA</button>
+  <button data-type="primary">Primary Button</button>
+  <button class="cta">Secondary CTA</button>
+  <button>Default Button</button>
+</body>
+</html>
+<!-- Here the first button has both class and data-type and so ,the color of data -type .cta style is added
+ in second button only data -type attribute is given so it takes the style of data-type attribute styling
+ in third button only the class is added and its style also
+ in last button the style of tag selector is applied -->
