@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Navigation Styling with Combinators, Pseudo-Classes, and Specificity</title>
+    <style>
+       header.div:first-child{
+        color: black;
+       }
+       header.div:nth-child(2)>a:hover{
+        color: red;
+       }
+       header.div:nth-child(2)~div:active{
+        color: chartreuse;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="">home</a>
+        </div>
+        <div><a href="">about us</a></div>
+        <div><a href="">contact</a></div>
+    </header>
+</body>
+</html>
